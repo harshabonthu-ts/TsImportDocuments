@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-ts-import-documents" version="0.0.1" 
+  xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>TsImportDocuments</name>
+  <platform name="ios">
+    <config-file target="*-Info.plist" parent="CFBundleDocumentTypes">
+      <array>
+        <dict>
+          <key>CFBudiagnosticndleTypeIconFiles</key>
+          <array/>
+          <key>CFBundleTypeName</key>
+          <string>Adobe PDF</string>
+          <key>LSItemContentTypes</key>
+          <array>
+            <string>com.adobe.pdf</string>
+          </array>
+        </dict>
+        <dict>
+          <key>CFBundleTypeIconFiles</key>
+          <array/>
+          <key>CFBundleTypeName</key>
+          <string>Microsoft Office Types</string>
+          <key>LSItemContentTypes</key>
+          <array>
+            <string>com.microsoft.word.doc</string>
+            <string>org.openxmlformats.wordprocessingml.document</string>
+            <string>com.microsoft.excel.xls</string>
+            <string>org.openxmlformats.spreadsheetml.sheet</string>
+          </array>
+        </dict>
+        <dict>
+          <key>CFBundleTypeIconFiles</key>
+          <array/>
+          <key>CFBundleTypeName</key>
+          <string>Images</string>
+          <key>LSItemContentTypes</key>
+          <array>
+            <string>public.jpeg</string>
+            <string>public.png</string>
+            <string>public.image</string>
+            <string>public.jpeg-2000</string>
+          </array>
+        </dict>
+      </array>
+    </config-file>
+  </platform>
+</plugin>
